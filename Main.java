@@ -6,7 +6,7 @@ public class Main {
   public static void main(String[]args){
     var sn = new Scanner(System.in);
     var salir = false;
-    var opcion = 0; // 
+    var opcion = 0;
 
     while (!salir){
 
