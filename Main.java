@@ -1,5 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Main {
 
@@ -10,7 +12,7 @@ public class Main {
 
     while (!salir){
 
-      System.out.println("1. Opcion a");
+      System.out.println("1. Hechos relevantes del año 2002");
       System.out.println("2. Opcion b");
       System.out.println("3. Opcion c");
 
@@ -21,7 +23,12 @@ public class Main {
 
         switch (opcion) {
           case 1:
-            System.out.println("Has seleccionado la opcion a");
+            System.out.println("Has seleccionado la opcion 1");
+            File file = new File("2002.txt");
+            Scanner scan = new Scanner(file);
+            while(scan.hasNext()){
+              System.out.println(scan.nextLine());  
+            }
             break;
           case 2:
             System.out.println("Has seleccionado la opcion b");
