@@ -32,14 +32,14 @@ public class Main {
             break;
           case 2:
             System.out.println("Has seleccionado la opcion 2");
-            File file = new File("2002.txt");
+            File file = new File("Proyecto - B.txt");
             Scanner scan = new Scanner(file);
             while(scan.hasNext()){
               System.out.println(scan.nextLine());
             break;
           case 3:
             System.out.println("Has seleccionado la opcion 3");
-            File file = new File("2002.txt");
+            File file = new File("Proyecto - C.txt");
             Scanner scan = new Scanner(file);
             while(scan.hasNext()){
               System.out.println(scan.nextLine());
