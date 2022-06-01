@@ -13,8 +13,8 @@ public class Main {
     while (!salir){
 
       System.out.println("1. Hechos relevantes del año 2002");
-      System.out.println("2. Opcion b");
-      System.out.println("3. Opcion c");
+      System.out.println("2. Información celulares");
+      System.out.println("3. Información sobre la guerra en Ucrania");
 
       try {
 
@@ -31,10 +31,18 @@ public class Main {
             }
             break;
           case 2:
-            System.out.println("Has seleccionado la opcion b");
+            System.out.println("Has seleccionado la opcion 2");
+            File file = new File("2002.txt");
+            Scanner scan = new Scanner(file);
+            while(scan.hasNext()){
+              System.out.println(scan.nextLine());
             break;
           case 3:
-            System.out.println("Has seleccionado la opcion c");
+            System.out.println("Has seleccionado la opcion 3");
+            File file = new File("2002.txt");
+            Scanner scan = new Scanner(file);
+            while(scan.hasNext()){
+              System.out.println(scan.nextLine());
             break;
             default:
             System.out.println("Solo números entre 1 y 3");
