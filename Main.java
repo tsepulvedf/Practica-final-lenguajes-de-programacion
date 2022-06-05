@@ -4,7 +4,7 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-public class Main extends Textos{
+public class Main extends Textos {
 
   public static void main(String[]args) throws IOException {
     var sn = new Scanner(System.in);
@@ -16,6 +16,7 @@ public class Main extends Textos{
       System.out.println("1. Hechos relevantes del año 2002");
       System.out.println("2. Información general sobre celulares");
       System.out.println("3. Información sobre la guerra en Ucrania");
+      System.out.println("4. Salir del menu");
 
       try {
 
@@ -33,9 +34,13 @@ public class Main extends Textos{
           case 3:
              getUcrania();
              break;
+          case 4:
+            System.out.println("Proceso terminado.");
+            salir = true;
+            break;
         
           default:
-            System.out.println("Solo números entre 1 y 3");
+            System.out.println("Solo números entre 1 y 4");
         }
       } catch (InputMismatchException e) {
         System.out.println("Debes colocar un numero del 1 al 3");
