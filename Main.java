@@ -1,6 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.io.*;
+import java.net.*;
 import java.util.*;
 
 public class Main {
@@ -13,7 +14,7 @@ public class Main {
     while (!salir){
 
       System.out.println("1. Hechos relevantes del año 2002");
-      System.out.println("2. Información celulares");
+      System.out.println("2. Información general sobre celulares");
       System.out.println("3. Información sobre la guerra en Ucrania");
 
       try {
@@ -23,28 +24,17 @@ public class Main {
 
         switch (opcion) {
           case 1:
-            System.out.println("Has seleccionado la opcion 1");
-            File file = new File("2002.txt");
-            Scanner scan = new Scanner(file);
-            while(scan.hasNext()){
-              System.out.println(scan.nextLine());  
+             get2002(); 
+             break;
             }
-            break;
           case 2:
-            System.out.println("Has seleccionado la opcion 2");
-            File file = new File("Proyecto - B.txt");
-            Scanner scan = new Scanner(file);
-            while(scan.hasNext()){
-              System.out.println(scan.nextLine());
-            break;
+             getCelular();
+             break;
           case 3:
-            System.out.println("Has seleccionado la opcion 3");
-            File file = new File("Proyecto - C.txt");
-            Scanner scan = new Scanner(file);
-            while(scan.hasNext()){
-              System.out.println(scan.nextLine());
-            break;
-            default:
+             getUcrania();
+             break;
+        
+          default:
             System.out.println("Solo números entre 1 y 3");
         }
       } catch (InputMismatchException e) {
