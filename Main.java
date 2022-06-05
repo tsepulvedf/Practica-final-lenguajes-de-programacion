@@ -26,7 +26,7 @@ public class Main extends Textos{
           case 1:
              get2002(); 
              break;
-            }
+            
           case 2:
              getCelular();
              break;
