@@ -4,7 +4,7 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-public class Main {
+public class Main extends Textos{
 
   public static void main(String[]args) throws IOException {
     var sn = new Scanner(System.in);
