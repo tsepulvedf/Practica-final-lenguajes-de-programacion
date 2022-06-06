@@ -43,14 +43,14 @@ class Textos {
 public static void getUcrania()throws IOException, MalformedURLException{
     URL url = new URL("https://textdoc.co/2DBhs8do7PfeAECp");
     Scanner read = new Scanner(url.openStream());
-    BufferedWriter writer = new BufferedWriter(new FileWriter("ucrania.txt"));
+    BufferedWriter writer = new BufferedWriter(new FileWriter("guerra ucrania.txt"));
     while(read.hasNext()){
       writer.write(read.nextLine());
     }  
     writer.close();
 
     String texto = "1. La guerra en Ucrania cumple este martes 97 días y la ofensiva rusa se concentra en la región del Donbás, en el este del país. La situación es especialmente dura en Severodonetsk, una ciudad clave para el control ruso de Lugansk y controlada en parte por las tropas invasoras. 2. El periodista de la cadena francesa BFMTV Frédéric Leclerc-Imhoff fue asesinado este el lunes mientras informaba sobre un convoy humanitario en la región de Lugansk, en el Donbass, al este ucraniano. Mientras París solicitó una investigación transparente lo antes posible para arrojar luz sobre las circunstancias de esta tragedia 3. En la cumbre de la Unión Europea se abordaron temas como la posible crisis alimentaria que se puede avecinar y las pruebas de los bloqueos que Rusia está haciendo para evitar las exportaciones de trigo. La reunión termina con nuevas sanciones que podrían aumentar los precios a todos los países europeos, aún así se iniciará un embargo gradual de petróleo. 4. Conocida como el granero de Europa, Ucrania depende en gran medida de su producción y exportaciones agrícolas. Pero los ataques rusos deliberados contra granjas e instalaciones de almacenamiento de alimentos están sirviendo para reducir aún más la capacidad del país para dar de comer a su gente y hacer avanzar su economía. 5. La Cámara Alta estadounidense dio luz verde definitiva a una ayuda extra para Ucrania que servirá para armas y mitigar la crisis generada por la guerra. Por otro lado, Vadim Shishimarin, el primer militar ruso acusado de crímenes de guerra, se enfrenta a una sentencia de cárcel de por vida, si es aceptada la petición de los fiscales ucranianos. Previamente, el soldado admitió su responsabilidad y pidió perdón.";
-  Path file = Path.of("ucrania.txt");
+  Path file = Path.of("guerra ucrania.txt");
   String fileToText = Files.readString(file);
   if(fileToText.contains(texto)){
     System.out.println(texto);
